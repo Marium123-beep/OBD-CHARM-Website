@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <title>Home </title>
+  <link rel="icon" type="image/x-icon"  href="assets\web-app-manifest-512x512.png"> 
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="privacy-policy.html">
+</head>
+<!--Slightly move karra hai nav-link per click kar ky-->
+<html class="scroll-smooth">
+<body>
+
+
+ <!-- Navbar -->
+<nav id="navbar" class="p-3 bg-primary-color sticky top-0 flex items-center justify-between lg:justify-start transition duration-300 shadow-md z-20">
+  <!-- Logo -->
+  <a href="#" id="brand" class="flex gap-2 items-center mx-2 my-6 ml-4 lg:ml-[110px]">
+    <img class="w-40 h-auto" src="./assets/asset 0.png" alt="Logo" />
+  </a>
+
+  <!-- Desktop Menu -->
+  <div id="nav-menu" class="hidden lg:flex gap-5 ml-auto mr-8 lg:ml-[230px]">
+    <ul class= "flex space-x-10 text-gray-800 text-[18px] font-normal ">
+      <li><a href="#home" class="hover:underline">Home</a></li>
+      <li><a href="#about" class="hover:underline">About</a></li>
+      <li><a href="#features" class="hover:underline">Features</a></li>
+      <li><a href="#insight" class="hover:underline">Insight</a></li>
+      <li><a href="#testimonial" class="hover:underline">Testimonial</a></li>
+      <li><a href="#contact" class="hover:underline">Contact</a></li>
+      <li>
+        <a 
+          href="privacy-policy.html" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="hover:underline"
+        >
+          Privacy Policy
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Toggle Button for Mobile -->
+  <button class="lg:hidden p-2 mr-4" onclick="handleMenu()">
+    <i class="fa-solid fa-bars text-gray-600"></i>
+  </button>
+
+  <!-- Mobile Menu -->
+  <div id="nav-dialog" class="hidden fixed z-10 inset-0 bg-white p-3">
+    <div class="flex justify-between items-center">
+      <a href="#" id="brand" class="flex gap-2 items-center">
+        <img class="object-cover w-21 h-14" src="./assets/asset 0.png" alt="Logo" />
+      </a>
+      <button class="p-2" onclick="handleMenu()">
+        <i class="fa-solid fa-xmark text-gray-600"></i>
+      </button>
+    </div>
+    <div class="mt-6">
+      <a href="#home" class="block font-medium p-3 hover:bg-gray-200 rounded-lg">Home</a>
+      <a href="#about" class="block font-medium p-3 hover:bg-gray-200 rounded-lg">About</a>
+      <a href="#features" class="block font-medium p-3 hover:bg-gray-200 rounded-lg">Features</a>
+      <a href="#insight" class="block font-medium p-3 hover:bg-gray-200 rounded-lg">Insight</a>
+      <a href="#testimonial" class="block font-medium p-3 hover:bg-gray-200 rounded-lg">Testimonial</a>
+      <a href="#contact" class="block font-medium p-3 hover:bg-gray-200 rounded-lg">Contact</a>
+      <a href="#privacy" class="block font-medium p-3 hover:bg-gray-200 rounded-lg">Privacy Policy</a>
+    </div>
+  </div>
+</nav>
+<!-- Navbar Ends Here -->
+
+
+  <!--Home-->
+  
+    <!-- Hero Section -->
+    <div class="flex flex-col lg:flex-row items-center justify-between px-4 lg:px-[150px] py-10">
+      <!-- Left Content -->
+      <div class="max-w-lg text-left ml-5 animate-slideInLeft ">
+        <h1 class="text-[65px] lg:text-[65px] font-bold leading-tight text-primary-color">
+          Car health matters!
+        </h1>
+        <p class="text-preprimary-color font-medium mt-5 text-[25px] lg:text-[23px] leading-[1.0]">
+          Know the health of your travel companion with smart AI integrated systems!
+        </p>
+        <a href="#learn-more"
+          class="px-6 py-4 mt-6 bg-primary-color text-white rounded-full hover:border hover:border-primary-color hover:bg-opacity-75 inline-block">
+          Learn More
+        </a>
+      </div>
+
+      <!-- Right Content (Phone Image) -->
+      <div class="mt-8 lg:mt-0 -mx-[60px] animate-slideInRight ">
+        <img src="./assets/asset 1.png" alt="Phone" class="w-full lg:max-w-[400px] animate-bounce-slow hidden lg:block">
+      </div>
+    </div>
+  </div>
+
+  <div class="h-[200px]"></div>
+
+  <!--About-->
+  <div id="about" class="opacity-0 translate-y-10 transition-all duration-1000 ease-out animate-on-scroll">
+    <!-- Hero Section -->
+    <div class="flex flex-col lg:flex-row  items-center justify-between px-4 lg:px-[130px] py-10 ">
+
+      <!-- Right Content (Phone Image) -->
+      <div class="mt-8 lg:mt-0 -mx-[60px] opacity-0 translate-x-[-100px] transition-all duration-1000 ease-out animate-on-scroll">
+        <img src="./assets/asset 21.png" alt="Phone" class="w-full lg:max-w-[465px]">
+      </div>
+
+
+
+      <!-- Left Content -->
+      <div class="max-w-lg text-left ml-5 opacity-0 translate-x-[100px] transition-all duration-1000 ease-out animate-on-scroll">
+        <h1 class="font-display text-customGray font-normal text-5xl leading-[1.1] mt-5 mb-5">
+          IoT based Health Monitoring
+        </h1>
+        <p class="text-2xl font-bold mt-4 text-customGray font-display">
+          Yes, it’s possible!
+        </p>
+        <p class="text-lightGray mt-4  font-body text-base font-light leading-[1.2]">
+          Knowing car health and risk management is as important as its fuel and oil! OBD CHARM makes it easy for you to
+          know your car’s profile and analytics with a feasible mobile app, to boost your car’s life with timed risk
+          management and health reporting!
+        </p>
+
+      </div>
+    </div>
+  </div>
+ 
+
+
+  <div class="h-[200px]"></div>
+
+
+  <!-- Features -->
+   <div id="features" class="opacity-0 translate-y-10 transition-all duration-1000 ease-out animate-on-scroll"> 
+  <div class="py-12 px-6 lg:px-20">
+    <!-- Section Title -->
+    <div class="text-center mb-12">
+      <h2 class="text-5xl font-body font-medium  text-customGray">
+        CHARM <span class="text-primary-color">Features</span>
+      </h2>
+    </div>
+
+    <!-- Features Grid -->
+    <div id="Features">
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10">
+      <!-- Feature Card 1 -->
+      <div class="bg-white shadow-md rounded-lg p-8 text-center">
+        <div class="inline-block p-4 bg-primary-color rounded-lg mb-4">
+          <img src="./assets/asset 8.svg" alt="Health Icon" class="h-10 w-10 mx-auto">
+        </div>
+        <h3 class="text-2xl font-semibold text-customGray mb-2 font-display">Health Profile</h3>
+        <p class="text-lightGray font-body text-base font-normal leading-6">
+          OBD CHARM is an AI-based smart app that helps fetch significant data about your car health and assists in risk
+          management by indicating alarming data flows. You can know when your car needs a service.
+        </p>
+      </div>
+
+      <!-- Feature Card 2 -->
+      <div class="bg-white shadow-md rounded-lg p-8 text-center">
+        <div class="inline-block p-4 bg-primary-color  rounded-lg mb-4">
+          <img src="./assets/asset 9.svg" alt="Analytic Icon" class="h-10 w-10 mx-auto">
+        </div>
+        <h3 class="text-2xl font-semibold text-customGray mb-2 font-display">Insight and Analytic</h3>
+        <p class="text-lightGray font-body text-base font-normal leading-6">
+          OBD CHARM helps to know the daily performance of your car, including fuel consumption, mileage, utilization
+          rate, mechanic performances, and much more! It also allows you to filter results to obtain useful data.
+        </p>
+      </div>
+
+      <!-- Feature Card 3 -->
+      <div class="bg-white shadow-md rounded-lg p-8 text-center">
+        <div class="inline-block p-4 bg-primary-color rounded-lg mb-4">
+          <img src="/assets/asset 10.svg" alt="Controlled Icon" class="h-10 w-10 mx-auto">
+        </div>
+        <h3 class="text-2xl font-semibold text-customGray mb-2 font-display">Controlled App</h3>
+        <p class="text-lightGray font-body text-base font-normal leading-6">
+          The most lustrous feature of OBD CHARM that makes it stand out is its convenient mobile app that helps control
+          the system with a single touch and real-time performance tracking and helpful notifications.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="h-[40px]"></div>
+
+<!--Features Part2-->
+
+  <!--Section -->
+  <div class="flex flex-col md:flex-row items-center justify-between px-4 lg:px-[80px] py-10">
+    <!-- Left Content -->
+    <div class="max-w-lg text-left ml-2 py-10 opacity-0 translate-x-[100px] transition-all duration-1000 ease-out animate-on-scroll">
+      <div class="w-45 border-b-8 border-primary-color mt-4 mb-12 w-[250px] h-[8px] origin-right translate-x-[-87px]     mx-[1px]"></div>
+      <p class="text-lightGray font-normal leading-[70px]">AI revolution</p>
+      <h2 class="font-normal text-3xl leading-[1.1] font-display text-preprimary-color w-full  md:w-[450px] mb-[20px]">
+        Smart Predictions and Analytics 
+      </h2>
+      <p class="font-bold text-lg text-lightGray leading-[1.1] mt-[20px]">
+        Predict the future of and foresee risks before they damage your car! 
+      </p>
+      <p class="text-base font-normal leading-6 font-body text-lightGray py-5">
+        An important objective of OBD CHARM is to enable smart predictions and analytics of the data from your car to understand where it is leading to! It tells you when to get your car pampered (SERVICED!) and keep it safe from potential dangers and damages!
+      </p>
+    </div>
+
+    <!-- Right Content (Phone Image) -->
+    <div class="mt-8 flex justify-center w-full opacity-0 translate-x-[-100px] transition-all duration-1000 ease-out animate-on-scroll">
+      <img src="./assets/asset 22.gif" alt="Phone" class="w-full max-w-[500px]">
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="h-[40px]"></div>
+
+<!--Insight-->
+<div id="insight" class="opacity-0 translate-y-10 transition-all duration-1000 ease-out animate-on-scroll">
+<div class="bg-teal-100 min-h-screen py-60">
+  <!-- Header Section -->
+  <h2 class="text-center text-4xl font-bold text-primary-color font-Robo leading-tight mb-[90px] -mt-[130px] w-full 
+  ">
+    Top 5 things you need to know <br> about OBD CHARM
+  </h2>
+
+  <!-- Carousel Section -->
+<div class="relative max-w-4xl mx-auto">
+  <!-- Card Slider Container -->
+  <div class="overflow-hidden">
+    <div class="flex transition-transform duration-500 ease-in-out" id="card-slider">
+      <!-- Card1 -->
+      <div class="flex-shrink-0 w-full px-4">
+        <div class="bg-white shadow-lg rounded-lg p-6 md:p-8 max-w-[500px] text-center mx-auto">
+          <div class="flex mt-6 mx-10">
+            <img src="./assets/asset 14.svg" alt="" class="w-10 h-10 ml-auto">
+          </div>
+          <h2 class="font-bold text-lg md:text-xl text-primary-color text-left mt-[-40px]">Trip Monitoring</h2>
+          <p class="text-gray-600 text-sm md:text-base mt-4 text-left">
+            In case of long trips, or even daily rides, you can track your car’s performance and important data such as fuel consumption, mileage, costs, and much more!
+          </p>
+        </div>
+      </div>
+
+      <!-- Card2 -->
+      <div class="flex-shrink-0 w-full px-4">
+        <div class="bg-white shadow-lg rounded-lg p-6 md:p-8 max-w-[500px] text-center mx-auto">
+          <div class="flex mt-6 mx-10">
+            <img src="./assets/asset 14.svg" alt="" class="w-10 h-10 ml-auto">
+          </div>
+          <h2 class="font-bold text-lg md:text-xl text-primary-color text-left mt-[-40px]">Not Just one Car</h2>
+          <p class="text-gray-600 text-sm md:text-base mt-4 text-left">
+            We know the versatility of your cars. OBD CHARM is not restricted to just one car but has a lot of data to offer about all the cars you may own!
+          </p>
+        </div>
+      </div>
+
+      <!-- Card3 -->
+      <div class="flex-shrink-0 w-full px-4">
+        <div class="bg-white shadow-lg rounded-lg p-6 md:p-8 max-w-[500px] text-center mx-auto">
+          <div class="flex mt-6 mx-10">
+            <img src="./assets/asset 14.svg" alt="" class="w-10 h-10 ml-auto">
+          </div>
+          <h2 class="font-bold text-lg md:text-xl text-primary-color text-left mt-[-40px]">Useful Notifications</h2>
+          <p class="text-gray-600 text-sm md:text-base mt-4 text-left">
+            Notifications from OBD CHARM are not annoying! They just update you about your car profile and alert you about all the risks you may encounter in the near time!
+          </p>
+        </div>
+      </div>
+
+      <!-- Card4 -->
+      <div class="flex-shrink-0 w-full px-4">
+        <div class="bg-white shadow-lg rounded-lg p-6 md:p-8 max-w-[500px] text-center mx-auto">
+          <div class="flex mt-6 mx-10">
+            <img src="./assets/asset 13.svg" alt="" class="w-10 h-10 ml-auto">
+          </div>
+          <h2 class="font-bold text-lg md:text-xl text-primary-color text-left mt-[-40px]">Mechanic Directory</h2>
+          <p class="text-gray-600 text-sm md:text-base mt-4 text-left">
+            OBD CHARM makes it easy for you to maintain a quick and reliable mechanic directory and contact them directly as soon as a risk is detected!
+          </p>
+        </div>
+      </div>
+
+      <!-- Card5 -->
+      <div class="flex-shrink-0 w-full px-4">
+        <div class="bg-white shadow-lg rounded-lg p-6 md:p-8 max-w-[500px] text-center mx-auto">
+          <div class="flex mt-6 mx-10">
+            <img src="./assets/asset 14.svg" alt="" class="w-10 h-10 ml-auto">
+          </div>
+          <h2 class="font-bold text-lg md:text-xl text-primary-color text-left mt-[-40px]">Car Diagnostics</h2>
+          <p class="text-gray-600 text-sm md:text-base mt-4 text-left">
+            OBD CHARM provides car diagnostics information and includes a number of cars, engine and machine related data that you should know!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left Arrow -->
+  <button
+  id="prev"
+  class="absolute  md:left-10 md:top-1/2  transform -translate-y-1/2 bg-teal-100 hover:bg-white p-3 rounded-full shadow-md  items-center justify-center hidden sm:hidden md:block"
+>
+  <img src="./assets/asset 11.svg" alt="Icon" class="w-10 h-10 " />
+</button>
+
+  <!-- Right Arrow -->
+  <button
+    id="next"
+    class="absolute  md:right-10  md:top-1/2  transform -translate-y-1/2 bg-teal-100 hover:bg-white p-3 rounded-full shadow-md hidden sm:hidden md:block"
+  >
+  <img src="./assets/asset 12.svg" alt="Icon" class="w-10 h-10" />
+  </button>
+</div>
+
+
+  <!-- Scroll to Top Button -->
+  <button
+    class="fixed bottom-5 right-5 bg-teal-400 hover:bg-teal-500 text-white p-3 rounded-full shadow-lg z-30"
+    onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-6 w-6"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+</div>
+
+
+<!--Testimonial-->
+<div class="flex flex-col items-center justify-start min-h-screen bg-white text-center px-4 pt-12 mt-[98px] opacity-0 translate-y-10 transition-all duration-1000 ease-out animate-on-scroll">
+  <h1 class="font-normal text-4xl leading-[1.1] mt-5 mb-5 md:text-5xl  text-customGray font-display">
+    OBD CHARM 
+    <span class="text-primary-color">– the <br> solution you need!</span>
+  </h1>
+  <p class="mt-4 text-lightGray  max-w-2xl text-base font-normal leading-6 font-body lg:max-w-lg">
+    Now, you don’t need a person to help you take care of your car or
+    understand the errors to know where the problem exists! OBD CHARM gives you
+    everything you need to help your car’s health and efficiently manage the
+    risks associated with AI-based analytics!
+  </p>
+</div>
+
+<div id="faq" class="container -mt-60  md:ml-[120px] opacity-0 translate-x-[100px] transition-all duration-1000 ease-out animate-on-scroll">
+  <div class="grid grid-cols-1 mt-6 gap-4 items-start ">
+      <div class="group rounded-xl border border-gray-200 bg-gray-50 p-6 lg:max-w-lg md:max-w-xl">
+          <dt class="cursor-pointer flex justify-between items-center" aria-controls="faq-1">
+              <p class="text-base font-bold bg-white text-[#1d2a5d] font-Robo">Finding Defaults</p>
+              <i class="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+          </dt>
+          <dd id="faq-1" class="hidden  font-light mt-6 font-body text-base leading-relaxed">
+              <p>One of the most significant issues that drivers and car owners face is knowing the internal car insights which can help them know the possible faults. </p>
+          </dd>
+
+      </div>
+
+
+      <div class="group rounded-xl border border-gray-200 bg-gray-50 p-6 lg:max-w-lg md:max-w-xl">
+          <dt class="cursor-pointer flex justify-between items-center" aria-controls="faq-2">
+              <p class="text-base font-bold bg-white text-[#1d2a5d] font-Robo">Finding Mechanic </p>
+              <i class="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+          </dt>
+          <dd id="faq-2" class="hidden font-light mt-6 font-body text-base leading-relaxed">
+              <p>Good and reliable Mechanics or car servicemen occur once in a blue moon. Most of the men in market doesn’t even know about the internal architecture of your car! </p>
+          </dd>
+
+      </div>
+
+
+
+      <div class="group rounded-xl border border-gray-200 bg-gray-50 p-6 lg:max-w-lg md:max-w-xl">
+          <dt class="cursor-pointer flex justify-between items-center" aria-controls="faq-3">
+              <p class="text-base font-bold bg-white text-[#1d2a5d] font-Robo">    Ignorant Attitudes </p>
+              <i class="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+          </dt>
+          <dd id="faq-3" class="hidden font-light mt-6 font-body text-base leading-relaxed">
+              <p>U nfortunately, most of th car owners don’t care about car health as long as the car keeps driving. The car may be driving but need serious services for a safe performance.</p>
+          </dd>
+
+      </div>
+
+      </div>
+
+<div class=" lg:flex lg:justify-end lg:-mt-[250px] opacity-0 translate-x-[-90px] md:translate-x-[90px] transition-all duration-1000 ease-out animate-on-scroll sm:translate-x-[60px]">
+<img src="./assets/asset 3.gif" alt="" >
+</div>
+</div>
+</div>
+
+
+
+  <!-- Testimonial Section -->
+  <div id="testimonial" class="opacity-0 translate-y-10 transition-all duration-1000 ease-out animate-on-scroll">
+  <div class="max-w-6xl mx-auto  p-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    
+    <!-- Testimonial Text -->
+    <div class="relative  -mt-4 lg:ml-20 w-fit">
+      <div class="flex items-center mb-4">
+        <img src="./assets/asset 16.svg" alt="" class="w-16 h-16">
+      </div>
+      <p class="text-lightGray mb-4 text-base font-normal leading-6 font-body">
+        OBD CHARM is a savior! I prevented costly engine replacements just because I was able to detect the faults before time! I’m glad I trusted this service!
+      </p>
+      <div class="flex items-center">
+        <!-- Vertical Line -->
+        <div class="w-1 h-10 bg-primary-color mr-2"></div>
+        <!-- Name -->
+        <p class="font-medium text-black italic">Marium Ehtesham</p>
+      </div>
+    </div>
+    
+    
+    <!-- Image Section -->
+    <div class="flex justify-center">
+      <img src="./assets/asset 23.gif" alt="Illustration"  class="w-[850px] h-[550px]">
+    </div>
+
+  </div>
+</div>
+
+  <!--Contact Page-->
+  <div id="contact" class="opacity-0 translate-y-10 transition-all duration-1000 ease-out animate-on-scroll">
+<div class="max-w-6xl mx-auto p-8 grid grid-cols-1  items-center -mt-20">
+  <h2 class="text-center lg:text-4xl text-2xl font-bold  mx-auto text-black tracking-widest ">REQUEST  YOUR  DEMO</h2>
+
+   <!-- Form Section -->
+   <form id="demoForm" class="flex flex-col  md:flex-row items-center justify-center mt-10 space-y-6 md:space-y-0 md:space-x-6 ">
+    <!-- Name Field -->
+    <div>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Name"
+        class="mt-2 w-full px-3 py-3  border border-slate-400 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 italic font-body"
+        required
+      />
+    </div>
+
+    <!-- Email Field -->
+    <div>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Email"
+        class="mt-2 w-full px-3 py-3  border border-slate-400 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 italic font-body"
+        required
+      />
+    </div>
+
+    <!-- Submit Button -->
+    <div class="text-center mb-3">
+      <button type="submit" class="px-6 py-3 bg-white text-black font-bold text-base rounded-lg hover:bg-primary-color hover:text-white border-[3px] border-primary-color uppercase  ">
+        Submit
+      </button>
+    </div>
+  </form>
+
+</div>
+
+<div class="bg-gray-200 mt-5 lg:h-[750px] md:h-[650px] sm:h-[560px] h-[690px]">
+
+  <!-- Main Section -->
+<section class="max-w-7xl mx-auto px-6 lg:px-10 py-8 flex flex-col lg:flex-row items-center justify-center relative">
+  
+    <!-- Logos Container -->
+    <div class="w-full flex flex-col lg:flex-row items-center justify-between">
+      
+      <!-- CHARM Logo -->
+      <div id="charm" class="lg:absolute lg:left-[90px] lg:top-[100px] flex justify-center lg:justify-start w-full mb-6 lg:mb-0">
+        <img src="./assets/asset 0.png" alt="CHARM Logo" class="w-[180px] lg:w-[280px] h-auto">
+      </div>
+  
+      <!-- Collaboration Heading -->
+      <div id="product" class="text-center lg:text-center lg:ml-[20px]   lg:mt-[200px] w-full">
+        <h2 class="text-xl md:text-2xl font-bold uppercase text-[#38424d] font-display">
+          In Collaboration With
+        </h2>
+  
+        <!-- Partner Logos -->
+        <div id="producer" class="flex flex-wrap justify-center items-center gap-6 mt-[150px] ml-[10px]">
+          <img src="./assets/asset 5.png" alt="NCL Logo" class="w-[200px] md:w-[250px] lg:w-[270px] h-auto">
+          <img src="./assets/asset 6.png" alt="NED Logo" class="w-[200px] md:w-[250px] lg:w-[270px] h-auto">
+          <img src="./assets/asset 7.png" alt="NCAI Logo" class="w-[200px] md:w-[250px] lg:w-[270px] h-auto">
+        </div>
+      </div>
+  
+    </div>
+  </section>
+ </div>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-center py-4">
+    <p class="text-gray-400 text-sm">
+      Copyright © 2025 - OBD CHARM <br>
+      A project of Neuro Computation Lab, NCAI, NED University of Engineering and Technology
+    </p>
+  </footer>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+</body>
+<script src="script.js"></script>
+
+</html>
